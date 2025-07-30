@@ -1,0 +1,25 @@
+.gym-container {
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.gym-boxes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gym-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  background-image: var(--main-gradient);
+  border-radius: 0.75rem;
+}
+
+.gym-box img {
+  width: 70%;
+  margin-inline: auto;
+  filter: invert(1) drop-shadow(2px 2px rgba(0, 0, 0, 0.5));
+}

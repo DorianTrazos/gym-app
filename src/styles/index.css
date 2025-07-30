@@ -3,6 +3,11 @@
 *::before {
   box-sizing: border-box;
 }
+
+:root {
+  --bg-color: #070a17;
+  --main-gradient: linear-gradient(-37deg, #cf56c9, #695af7);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -26,5 +31,7 @@ nav ul {
 
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--bg-color);
+  color: #fff;
 }

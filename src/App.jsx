@@ -1,5 +1,15 @@
+import { BrowserRouter } from 'react-router-dom';
+import AuthProvider from './lib/providers/Auth.provider';
+import Router from './lib/router/Router';
+
 const App = () => {
-  return <h1>React</h1>;
+  return (
+    <BrowserRouter>
+      <AuthProvider>
+        <Router />
+      </AuthProvider>
+    </BrowserRouter>
+  );
 };
 
 export default App;
