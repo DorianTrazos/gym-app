@@ -12,10 +12,14 @@
 .gym-box {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 1rem;
   background-image: var(--main-gradient);
   border-radius: 0.75rem;
+}
+
+.gym-box h2 {
+  margin: 0.5rem 0 0 0;
 }
 
 .gym-box img {
