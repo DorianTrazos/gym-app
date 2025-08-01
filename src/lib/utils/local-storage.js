@@ -1,12 +1,12 @@
 const LS = localStorage;
 
 const getLocalStorageData = id => {
-  const data = LS.getItem(id);
   try {
-    return data ? JSON.parse(data) : null;
+    const rawData = localStorage.getItem(id);
+    return rawData ? JSON.parse(rawData) : {};
   } catch (err) {
-    console.error(`Error al parsear los datos de localStorage con id "${id}":`, err);
-    return null;
+    console.error(`Error al leer los datos de localStorage con id "${id}":`, err);
+    return {};
   }
 };
 

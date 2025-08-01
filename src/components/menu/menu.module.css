@@ -1,0 +1,30 @@
+.menu {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  translate: -50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 55%;
+  border-radius: 3rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.menu-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  opacity: 0.3;
+  width: 40px;
+  height: 40px;
+}
+
+.active {
+  opacity: 1;
+}
+
+.active {
+  background-color: #cf56c9;
+}
